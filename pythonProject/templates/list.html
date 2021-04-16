@@ -1,0 +1,13 @@
+<!doctype html>
+<title>SGDF</title>
+<h1>SGDF</h1>
+<!doctype html>
+<form method="POST" action="/delete">
+<ul>
+   {% for item in tree %}
+    <li>
+        <p name="{{ item }}">{{ item }} <button href="/delete" type="submit" method="POST" class="btn btn-primary">Delete</button></p>
+    </li>
+    {% endfor %}
+</ul>
+</form>
